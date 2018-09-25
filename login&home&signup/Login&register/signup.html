@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>signup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="container  slide fade c1">
+            <form action="" id="signup_form" class="form">
+                <div id="firstname_group">
+                    <input type="text" id="fname" placeholder="first name" name="text1">
+                    <span>
+                        <img src="images/user.svg">
+                    </span>
+                </div>
+                <div id="lastname_group">
+                    <input type="text" id="lname" placeholder="lastname" name="text2">
+                    <span>
+                        <img src="images/user.svg">
+                    </span>
+                </div>
+                <div id="email_group">
+                    <input type="text" id="email" placeholder="email@exampl.com" name="email">
+                    <span>
+                        <img src="images/mail.svg">
+                    </span>
+                </div>
+
+                <div id="password_group">
+                    <input type="password" id="password" placeholder="*******" name="password">
+                    <span>
+                        <img src="images/lock.svg">
+                    </span>
+                </div>
+
+                <div>
+                    <label id="validation_text"></label>
+                </div>
+                <div class="btn">
+                    <input type="button" class="button_next1" value="Next" onclick="slide_move()">
+                </div>
+            </form>
+        </div>
+
+        <div class="container slide fade">
+            <form action="" id="signup_form2" class="form">
+
+                <div id="dOfBirth_group">
+                    <input type="Date" id="dateofbirth" data-placeholder=" of birth">
+                    <span>
+                        <img src="images/dob.svg">
+                    </span>
+                </div>
+
+                <div id="country_group">
+                    <input type="text" id="country" placeholder="country" value="Egypt" name="text3">
+                    <span>
+                        <img src="images/country.svg">
+                    </span>
+                </div>
+
+                <div id="city_group">
+                    <input type="text" id="city" placeholder="City">
+                    <span>
+                        <img src="images/location.svg">
+                    </span>
+                </div>
+                <div>
+                    <label id="validation_text"></label>
+                </div>
+                <div class="btn">
+                    <input type="button" onclick="slide_move()" class="button_next2" value="Next" name="button">
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="container slide fade c3">
+            <form action="" id="signup_form3" class="form f3">
+
+                <div class="cover">
+                    <img id="cover_img" width="100%" height="100%">
+                    <input type="file" id="img_input_cover" accept="image/*" class="" onchange="xx(this,'cover_img')" name="file1">
+                    <div class="img_edit">
+                        <label for="img_input_cover">
+                            <img src="images/edit.svg">
+                            </i>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <img id="profile_img" src="images/profile.svg" width="100%" height="100%">
+
+                    <div class="img_edit2">
+                        <label for="img_input_profile">
+                            <img id="profile_img" src="images/edit.svg">
+                            </i>
+                        </label>
+                    </div>
+
+                    <input type="file" id="img_input_profile" accept="image/*" class="" onchange="xx(this,'profile_img')" name="file2">
+
+                </div>
+
+
+                <div class="btn3">
+                    <input type="button" class="button_register" value="REGISTER" name="button2">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="login_link">
+        <p>alraeady have account? &nbsp;
+            <a href="login.html" class="login">login</a>
+        </p>
+        <span class="dot active_dot" onclick="slide_move(1,true)">
+            <i class="fas fa-circle"></i>
+        </span>
+        <span class="dot" onclick="slide_move(2,true)">
+            <i class="fas fa-circle"></i>
+        </span>
+        <span class="dot" onclick="slide_move(3,true)">
+            <i class="fas fa-circle"></i>
+        </span>
+    </div>
+
+    <div class="background_v1 bgv">
+        <img src="images/logo.svg">
+    </div>
+    <div class="background_v2 bgv">
+        <img src="images/logo.svg">
+    </div>
+    <div class="background_v3 bgv">
+        <img src="images/pinklogo.svg">
+    </div>
+    <script src="js/slider.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

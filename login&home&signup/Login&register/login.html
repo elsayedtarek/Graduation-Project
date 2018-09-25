@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form name="login_form">
+                <div id="email_group">
+                    <input type="text" name="email" placeholder="Email@example.com">
+                    <span>
+                        <img src="images/mail.svg">
+                    </span>
+                </div>
+                <div id="password_group">
+                    <input type="password" name="password" placeholder="**********" >
+                    <span>
+                        <img src="images/lock.svg">
+                    </span>
+                </div>
+
+                <div class="remember">
+                    <span>
+                        <img src="images/checked.svg" class="checkbox" id="checkV" onclick="remember_checker()">
+                    </span>
+                    <label onclick="remember_checker()" class="checkbox">Remember me</label>
+                </div>
+                <div>
+                    <label id="validation_text"></label>
+                </div>
+
+                <div class="btn">
+                    <input type="button" onclick="login_validate()" class="button_login" value="LOGIN">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="register_link">
+        <p>Do not have an account?
+            <a href="signup.html" class="register">Register now for free!</a>
+        </p>
+    </div>
+
+    <div class="background_v1 bgv">
+        <img src="images/logo.svg">
+    </div>
+    <div class="background_v2 bgv">
+        <img src="images/logo.svg">
+    </div>
+    <div class="background_v3 bgv">
+        <img src="images/pinklogo.svg">
+    </div>
+
+    <script src="js/validation.js"></script>
+
+</body>
+
+</html>

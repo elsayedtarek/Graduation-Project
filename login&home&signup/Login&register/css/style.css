@@ -1,0 +1,366 @@
+body {
+    background: #32374a;
+    font-family: 'Cairo';
+    overflow: hidden;
+}
+
+a {
+    color: #e6e5ea;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input {
+    width: 85%;
+    border: none;
+    height: 20px;
+    font-size: 1em;
+    line-height: 20px;
+}
+
+select {
+    width: 85%;
+    border: none;
+    height: 100%;
+}
+
+.background_v1 img {
+    position: absolute;
+    left: 45%;
+    top: 0;
+    margin-top: -80px;
+    height: 150px;
+    width: 300;
+    z-index: -99999999;
+}
+
+.background_v2 img {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    margin-right: -200px;
+    height: 300px;
+    width: 500px;
+    z-index: -99999999;
+}
+
+.background_v3 img {
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    margin-bottom: -50px;
+    height: 100px;
+    width: 100px;
+    z-index: -99999999;
+}
+
+.container {
+    width: 22%;
+    margin: 120px auto 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+}
+
+.c1 {
+    margin-top: 70px;
+}
+
+.c3 {
+    margin-top: 100px;
+}
+
+.form {
+    width: 80%;
+    margin: 50px auto 0 auto;
+}
+
+.f3 {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.cover {
+    width: 100%;
+    background-color: #0385d6;
+    height: 100px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.profile {
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #0385d6;
+    position: relative;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#profile_img {
+    border-radius: 50%;
+}
+
+.img_edit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin-bottom: -10px;
+    margin-right: -10px;
+    text-align: center;
+}
+
+.img_edit2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 5px;
+    right: 5px;
+    background: transparent;
+    text-align: center;
+}
+
+#email_group,
+#password_group,
+#firstname_group,
+#lastname_group,
+#dOfBirth_group,
+#country_group,
+#city_group {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid #e6e5ea;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    margin-bottom: 30px;
+}
+
+span img {
+    width: 10%;
+    text-align: right;
+    float: right;
+    height: 20px;
+}
+
+.checkbox {
+    height: 30px;
+    padding-left: 10px;
+    float: left;
+}
+
+.remember {
+    display: inline-block;
+    height: 30px;
+}
+
+.btn {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    text-align: center
+}
+
+.btn3 {
+    width: 100%;
+    margin: 10px auto 0 auto;
+    text-align: center
+}
+
+.button_login,
+.button_next1,
+.button_next2,
+.button_register {
+    width: 100%;
+    height: 50px;
+    background-color: #0385d6;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.button_register {
+    height: 60px;
+    width: 80%;
+}
+
+#img_input_cover,
+#img_input_profile {
+    opacity: 0;
+    height: 5px;
+}
+
+.register_link,
+.login_link {
+    width: 25%;
+    margin: 50px auto 0 auto;
+    color: white;
+    text-align: center;
+}
+
+login_link {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    padding-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#validation_text {
+    color: red;
+    font-weight: lighter;
+}
+
+/*slider styles*/
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    color: #757575;
+    width: 15px;
+    margin: 0 2px;
+    transition: color 0.6s ease;
+}
+
+.dot:hover,
+.active_dot {
+    color: #fff;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/*//////////////////////*/
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 30%;
+    }
+    .profile {
+        width: 53%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 35%;
+    }
+    .register_link,
+    .login_link {
+        width: 30%;
+    }
+    .background_v1 img {
+        margin-top: -80px;
+    }
+    .background_v2 img {
+        height: 200px;
+        width: 500px;
+    }
+    .background_v3 img {
+        margin-bottom: -50px;
+    }
+    .profile {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .container {
+        width: 40%;
+    }
+    .register_link,
+    .login_link {
+        width: 40%;
+    }
+    .profile {
+        width: 58%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 45%;
+    }
+    .register_link,
+    .login_link {
+        width: 45%;
+    }
+    .background_v2 img {
+        height: 150px;
+        width: 300px;
+        margin-right: -150px;
+    }
+    .profile {
+        width: 61%;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    body {
+        overflow-y: visible;
+    }
+}
+
+@media only screen and (max-height: 300px) {
+    .bgv {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 50%;
+    }
+    .register_link,
+    .login_link {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 55%;
+    }
+    .register_link,
+    .login_link {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+    .register_link,
+    .login_link {
+        width: 80%;
+    }
+}

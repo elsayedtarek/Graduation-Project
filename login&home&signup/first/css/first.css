@@ -1,0 +1,207 @@
+
+body{
+    font-family:'cairo';
+    overflow-x: hidden;
+}
+.container{
+	width: 90%;
+}
+
+.header{
+	background-color: #32374a; 
+    background: url(../img/background1.png);
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.logo img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+}
+
+
+.headernav{
+	padding-top: 30px;
+}
+
+.headercontent{
+	margin-top:150px;
+	color: #0385d6;
+}
+
+.headercontent p{
+	font-size: 20px;	
+}
+
+.headercontent h1{
+	color: white;
+	font-size:60px;
+	font-weight: bold;
+}
+
+.centered{
+	text-align: center;
+}
+
+.header button{
+	background-color: transparent;
+	color: #0385d6; 
+	height:35px;
+	border: 0px solid #0385d6;
+	font-weight: bolder;
+	float: right;
+}
+
+.header button:hover{
+	border: 1px solid #e6e5ea;
+}
+
+.headercontent button{
+	border: 1px solid #e6e5ea;
+	margin-bottom: 20px;
+	float: none;
+}
+
+.firstbody{
+    background-size: cover;
+    background-clip: border-box;
+	background-color: #e6e5ea;
+}
+
+.body1 img{
+	width: 100%;
+	height: 450px;
+}
+
+.body1 .mid{
+	margin-top: 100px;
+}
+
+.body1 h3{
+	margin-top: 10px;
+	font-weight: bolder;
+}
+
+.body1 button{
+	height: 40px;
+	background: transparent;
+	border: 1px solid red;
+	font-weight: bold;
+}
+
+.start{
+	background-color: #0385d6;
+	height: 150px;
+	line-height: 150px;
+
+}
+
+.start h1{
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 10px 0;
+    font-weight: bolder;
+}
+
+.secondbody{
+	background-color: #32374a;
+	padding:100px 0;
+	color: #fff;
+}
+
+.secondbody p{
+	height:120px;
+	font-size: 16px;
+	width: 80%;
+}
+
+.secondbody h2{
+	padding-left:5px;
+	font-weight: bold;
+}
+
+.secondbody button{
+	height: 40px;
+	background: transparent;
+	border: 1px solid red;
+}
+
+.thirdcontent{
+    background:#e6e5ea url(../img/background3.png);
+    background-size: cover;
+    background-clip: border-box;
+	padding: 100px;
+	color: #000;
+}
+
+.thirdcontent p{
+	font-size: 16px;
+}
+
+.thirdcontent h2{
+	font-weight: bolder;
+}
+
+.thirdcontent button{
+	height: 40px;
+	background: transparent;
+	border: 1px solid red;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+
+
+
+.footer1{
+	background-color:#fff ;
+	padding: 100px 0;
+}
+
+
+.footer1 h4{
+	font-weight: bold;
+}
+
+.footer1 h5{
+	margin:5px 0;
+	padding: 0;
+}
+
+.footer1 img{
+	width: 100px;
+	height: 100px;
+    margin-bottom: 10px;
+}
+
+.ios,.android{
+	text-align: center;
+}
+.ios,.android p{
+    font-weight: bold;
+}
+
+.ios img{
+    border: 3px solid #000; 
+    border-radius: 5px;
+}
+
+.android img{
+    border: 3px solid #000; 
+    border-radius: 15px;
+}
+
+.footer2{
+	padding-top: 30px;
+}
+
+.line{
+	height: 2px;
+	background-color: #bbb;
+	width: 95%;
+	margin: 0 auto;
+}
